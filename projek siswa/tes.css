@@ -1,0 +1,59 @@
+body {
+  font-family: "Times New Roman", serif; /* Properti diwariskan */
+}
+p {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Jenis font */
+  font-size: 40px; /* Ukuran font */
+  font-weight: bold; /* Ketebalan font */
+  font-style: italic; /* Gaya font */
+  color: #333; /* Warna font */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+}
+
+h1 {
+  text-align: center; /* Mengatur teks ke tengah */
+  letter-spacing: 2px; /* Menambahkan jarak antar huruf */
+  text-decoration: underline; /* Garis bawah teks */
+  line-height: 1.5; /* Tinggi baris */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Bayangan teks */
+}
+
+a:hover {
+  color: red; /* Warna berubah saat di-hover */
+  text-decoration: none; /* Menghilangkan garis bawah */
+}
+input:focus {
+  border: 2px solid blue; /* Garis biru saat input fokus */
+}
+
+div {
+  display: flex; /* Membuat elemen fleksibel */
+  justify-content: center; /* Memusatkan konten secara horizontal */
+  align-items: center; /* Memusatkan konten secara vertikal */
+  height: 200px;
+  background-color: lightgrey;
+}
+
+img {
+  padding: 10px;
+  text-align: center;
+  width: 300px; /* Lebar 300px */
+  height: auto; /* Tinggi otomatis mengikuti proporsi */
+  max-width: 100%; /* Mencegah elemen melampaui kontainer */
+}
+
+h2 {
+    margin: 20px; /* Semua sisi memiliki margin 20px */
+}
+p {
+    margin: 10px 0; /* Margin vertikal 10px, horizontal 0 */
+}
+
+button {
+    padding: 10px 20px; /* Atas-bawah 10px, kiri-kanan 20px */
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Membuat sudut tumpul */
+}

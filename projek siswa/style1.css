@@ -1,0 +1,164 @@
+.container {
+    max-width: 1000px; /* Lebar maksimum konten */
+    margin: 0 auto; /* Pusatkan elemen secara horizontal */
+    background-color: #fff;
+    padding: 20px; /* Jarak dalam elemen */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+  }
+  
+  /* Gaya untuk kontainer utama */
+  body > div {
+    background-color: #fff; /* Warna latar belakang putih */
+    max-width: 900px;
+    margin: 40px auto; /* Tengah secara horizontal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Gaya untuk judul utama */
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Gaya paragraf deskripsi */
+  p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px auto;
+    max-width: 800px;
+  }
+  
+  /* Gaya gambar */
+  img {
+    display: block;
+    margin: 20px auto;
+    width: 150px; /* Ukuran gambar */
+    height: 150px;
+    border-radius: 50%; /* Membuat lingkaran */
+    border: 3px solid #007bff; /* Bingkai biru */
+  }
+  
+  /* Gaya untuk subjudul */
+  h3 {
+    color: #007bff; /* Warna biru */
+    margin-top: 20px;
+  }
+  
+  /* Gaya daftar */
+  li {
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Gaya tabel informasi pribadi */
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%; /* Lebar tabel */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  table td {
+    padding: 12px 16px; /* Spasi dalam tabel */
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table td:first-child {
+    font-weight: bold;
+    background-color: #f7f7f7;
+    color: #555;
+  }
+  
+  /* Gaya link GitHub */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Gaya form */
+  form {
+    margin: 20px auto;
+    width: 100%; /* Lebar form */
+    padding: 0px;
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form table {
+    width: 100%;
+    border: none;
+  }
+  
+  form table td {
+    padding: 10px;
+    vertical-align: top;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  form textarea {
+    height: 100px;
+    resize: none; /* Nonaktifkan resize */
+  }
+  
+  form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsivitas */
+  @media (max-width: 768px) {
+    body > div {
+      padding: 10px;
+    }
+  
+    table,
+    form {
+      width: 100%; /* Lebar penuh untuk layar kecil */
+    }
+  
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      font-size: 12px;
+    }
+  
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }

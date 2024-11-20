@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <style>
+        /* Mengatur tampilan halaman */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #3b82f6, #6b21a8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30%;
+            margin: 0;
+        }
+        /* Mengatur container form */
+        .register-container {
+            background-color: white;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 50%; 
+            max-width: 400px;
+            text-align: center;
+        }
+        /* Mengatur heading */
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        /* Mengatur input dan select */
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"],
+        .register-container input[type="tel"],
+        .register-container input[type="date"],
+        .register-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        /* Mengatur checkbox */
+        .register-container label {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: #666;
+        }
+        /* Mengatur tombol daftar */
+        .register-container input[type="submit"] {
+            background-color: #3b82f6;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        /* Efek hover pada tombol daftar */
+        .register-container input[type="submit"]:hover {
+            background-color: #2563eb;
+        }
+        /* Tautan login */
+        .login-link {
+            display: block;
+            margin-top: 20px;
+            color: #3b82f6;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="register-container">
+    <h2>Daftar Akun!</h2>
+    <form action="#" method="post">
+        <input type="text" id="fullname" name="fullname" placeholder="Nama" required>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Ulangi Password" required>
+
+        <input type="text" id="fullname" name="fullname" placeholder="Nama Lengkap">
+        <input type="tel" id="phone" name="phone" placeholder="Nomor Telepon">
+        <input type="date" id="dob" name="dob" placeholder="Tanggal Lahir">
+
+        <select id="gender" name="gender">
+            <option value="male">Laki-laki</option>
+            <option value="female">Perempuan</option>
+            <option value="other">Lainnya</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="terms" required>
+            Saya setuju dengan syarat dan ketentuan
+        </label>
+
+        <input type="submit" value="Daftar">
+    </form>
+    <a href="login.html" class="login-link">Sudah Punya Akun? Login!</a>
+</div>
+
+</body>
+</html>
